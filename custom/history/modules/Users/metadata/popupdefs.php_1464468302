@@ -1,0 +1,52 @@
+<?php
+$popupMeta = array (
+    'moduleMain' => 'User',
+    'varName' => 'USER',
+    'orderBy' => 'user_name',
+    'whereClauses' => array (
+  'user_name' => 'users.user_name',
+  'full_name' => 'users.full_name',
+  'sucursal_c' => 'users_cstm.sucursal_c',
+  'sucursal_cocha_c' => 'users_cstm.sucursal_cocha_c',
+),
+    'searchInputs' => array (
+  2 => 'user_name',
+  4 => 'full_name',
+  5 => 'sucursal_c',
+  6 => 'sucursal_cocha_c',
+),
+    'searchdefs' => array (
+  'full_name' => 
+  array (
+    'type' => 'name',
+    'studio' => 
+    array (
+      'formula' => false,
+    ),
+    'label' => 'LBL_NAME',
+    'width' => '10%',
+    'name' => 'full_name',
+  ),
+  'user_name' => 
+  array (
+    'name' => 'user_name',
+    'width' => '10%',
+  ),
+  'sucursal_c' => 
+  array (
+    'type' => 'enum',
+    'studio' => 'visible',
+    'label' => 'LBL_SUCURSAL',
+    'width' => '10%',
+    'name' => 'sucursal_c',
+  ),
+  'sucursal_cocha_c' => 
+  array (
+    'type' => 'enum',
+    'studio' => 'visible',
+    'label' => 'LBL_SUCURSAL_COCHA',
+    'width' => '10%',
+    'name' => 'sucursal_cocha_c',
+  ),
+),
+);

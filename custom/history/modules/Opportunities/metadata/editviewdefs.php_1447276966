@@ -1,0 +1,93 @@
+<?php
+$viewdefs ['Opportunities'] = 
+array (
+  'EditView' => 
+  array (
+    'templateMeta' => 
+    array (
+      'maxColumns' => '2',
+      'widths' => 
+      array (
+        0 => 
+        array (
+          'label' => '10',
+          'field' => '30',
+        ),
+        1 => 
+        array (
+          'label' => '10',
+          'field' => '30',
+        ),
+      ),
+      'javascript' => '{$PROBABILITY_SCRIPT}',
+      'useTabs' => false,
+      'tabDefs' => 
+      array (
+        'DEFAULT' => 
+        array (
+          'newTab' => false,
+          'panelDefault' => 'expanded',
+        ),
+      ),
+      'syncDetailEditViews' => true,
+    ),
+    'panels' => 
+    array (
+      'default' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            'name' => 'name',
+          ),
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            'name' => 'currency_id',
+            'label' => 'LBL_CURRENCY',
+          ),
+          1 => 
+          array (
+            'name' => 'date_closed',
+          ),
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            'name' => 'amount',
+          ),
+          1 => 'opportunity_type',
+        ),
+        3 => 
+        array (
+          0 => 'sales_stage',
+          1 => 
+          array (
+            'name' => 'priority_c',
+            'studio' => 'visible',
+            'label' => 'LBL_PRIORITY',
+          ),
+        ),
+        4 => 
+        array (
+          0 => 'probability',
+          1 => 'next_step',
+        ),
+        5 => 
+        array (
+          0 => 'description',
+          1 => 
+          array (
+            'name' => 'leads_opportunities_1_name',
+            'label' => 'LBL_LEADS_OPPORTUNITIES_1_FROM_LEADS_TITLE',
+          ),
+        ),
+      ),
+    ),
+  ),
+);
+?>

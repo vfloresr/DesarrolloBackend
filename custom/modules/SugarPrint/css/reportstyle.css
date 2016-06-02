@@ -1,0 +1,93 @@
+/*
+CSS style for SugarPrint PDF	
+Font size is related to main font size settings in administration settings of SugarPrint
+*/ 
+
+
+/*
+H1 for Report title
+*/  
+  h1 {
+		color: #0000ff;
+		font-size: 2em;
+		text-align:center;
+		margin:25px 0 10px 0;		
+	}
+  
+/*
+H4,H3 are used for subpanels titles and group labels (when you use Group check on report)
+*/
+	h4, h3{  
+		text-align:left;
+		margin:15px 0 5px 0;
+	}
+	h4 {
+  	color: #000;
+		font-size: 1.7em;
+	}
+ 	h3 {
+    color: #000;
+		font-size: 1.4em;
+	}
+
+/*
+All teables in PDF are tmain class
+*/
+	table.tmain {
+		color: #333333;
+		font-size: 1em;
+		background-color: #ffffff;
+    border:none;
+	}
+/*
+used to right align. of totals cells
+*/
+  td.right_al {
+		text-align:right;
+	}
+
+	td {
+		border-bottom: 1px solid #333333;
+		text-align:left;
+		padding:5px 0;
+		vertical-align:middle;
+	}
+/*
+a ligth row to separate header informations on detailview
+*/
+ 	td.ligthrow {
+    border-bottom: 1px solid #E9E9E9;
+  }
+/*
+table headers cells (columns titles))
+*/
+	td.tt {
+		color: #000000;
+		text-align:left;
+		font-weight:bold;
+	}
+/*
+summary labels 
+*/
+	td.bsx {
+		border-bottom:none;
+		font-weight:bold;
+		font-size:.8em;
+	}
+/*
+summary cells 
+*/  
+  td.bsx_2 {
+		border:1px solid #CCC;
+		font-weight:bold;
+    border-bottom: 1px solid #333333;
+    border-right: 1px solid #333333;
+    padding: 3px 5px 3px 3px;
+  }
+    
+/*
+color to alternate rows in any tables
+*/
+	tr.oddrow {
+		background-color: #efefef;
+	}

@@ -1,0 +1,265 @@
+body{
+  min-height: 0!important;
+}
+
+/*************************************/
+/********** LOGO **************/
+/************************************/
+.logo-cocha{
+  height: 50px;
+}
+
+/*************************************/
+/********** TOPBAR **************/
+/************************************/
+#topbar.alt{
+  padding: 10px 22px;
+  min-height: 0;
+}
+
+/*************************************/
+/********** MODAL **************/
+/************************************/
+.modal#email textarea, .note-editor .note-editable{
+  width: 100%;
+  min-width: 100%;
+  resize: none;
+  height: 150px;
+}
+
+.note-editor textarea, .note-table, .note-view, .note-help{
+  display: none;
+}
+
+.note-editor .note-editable{
+  border: 1px solid #ddd!important;
+  height: 400px;
+  //margin-bottom: -35px;
+  padding: 15px;
+}
+
+
+/*************************************/
+/********** DATATABLE **************/
+/************************************/
+.dataTable thead > tr > th {
+    padding-right: 20px;
+    text-align: center;
+    vertical-align: middle;
+    border-right: 0;
+}
+
+.dataTable tbody > tr > td {
+    padding: 0 7px;
+    width: 1px;
+    white-space: nowrap;
+}
+
+.dataTable .btn-iconic{
+    padding: 0!important;
+    height: 24px!important;
+    margin-right: 10px;
+    width: 24px!important;
+}
+
+.dataTable .btn-iconic:last-child{
+  margin-right: 0;
+}
+
+.dataTable .btn-iconic a{
+    color: #fff!important;
+    text-decoration: none!important;
+    padding: 5px!important;
+}
+
+.custom-table tbody, .custom-cross tbody{
+  text-align: center;
+}
+
+.custom-table tr > td, .custom-table tr > th, .custom-cross tr > td, .custom-cross tr > th{
+  border-top: 0!important;
+  border-right: 0!important;
+}
+
+.custom-table tbody > tr:first-child > td, .custom-cross tbody > tr:first-child > td {
+    border-top: 0;
+}
+
+.custom-cross tbody > tr > td.modal-ver, .custom-cross tbody > tr > td.modal-email {
+    cursor: pointer;
+}
+
+.custom-table thead > tr > th, .custom-cross thead > tr > th {
+    padding-right: 20px;
+    text-align: center;
+    vertical-align: middle;
+    border-right: 0;
+}
+
+.custom-layout-table .panel-body{
+  padding-top: 0;
+}
+
+.custom-table tbody tr:hover td, .custom-cross tbody tr:hover td {
+    background-color: #eee!important;
+}
+
+.custom-table thead th, .custom-cross thead th{
+  background-color: rgba(119,119,119,.6)!important;
+  color: #fff!important;
+  border-color: #afafaf!important;
+}
+
+.divisor {
+    margin: 0 1px;
+    font-weight: bold;
+}
+
+.cliente-titulo {
+    color: #3498db;
+    font-weight: bold;
+    text-align: left;
+    margin: 10px 0 0 80px;
+}
+
+.cliente-correo {
+    margin-bottom: 5px;
+}
+
+.cliente-telefono {
+    margin: 0;
+}
+
+.email-telefono {
+    padding-top: 18px!important;
+}
+
+.cliente-descripcion .label {
+    margin-left: 5px;
+}
+
+.dataTable .cliente-titulo, .dataTable .cliente-descripcion {
+    margin: 0!important;
+    text-align: center!important;
+}
+
+/*************************************/
+/********** CONTENT **************/
+/************************************/
+.pl15{
+  padding-left: 15px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.section-container, .section-title{
+  display: none;
+}
+
+.section-container .panel-heading + .panel-body{
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/*************************************/
+/********** DATATABLE **************/
+/************************************/
+.datatable-scroll {
+  overflow-x: auto;
+  overflow-y: visible;
+  width: 100%;
+}
+
+/*************************************/
+/********** LOGIN PAGE **************/
+/************************************/
+.login-page{
+  margin: 0;
+  line-height: 20px;
+  color: #333333;
+  background: #2b2b2b;
+  min-height: 0!important;
+}
+
+.login-page .main-container{
+  margin: 0 auto;
+  position: absolute;
+  top: 25%;
+  width: 100%;
+  height: 300px;
+}
+
+.login-page .login-wrapper {
+  background: #fcfcfc;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 18px 6px -8px #1a1a1a, 0 0 2px #0d0d0d;
+  -moz-box-shadow: 0 18px 6px -8px #1a1a1a, 0 0 2px #0d0d0d;
+  box-shadow: 0 18px 6px -8px #1a1a1a, 0 0 2px #0d0d0d;
+}
+
+.login-page .login-wrapper .header {
+  padding: 10px 10px 0;
+  margin: 0;
+}
+
+.login-page .login-wrapper .content {
+  padding: 0 10px;
+}
+
+.login-page .login-wrapper .actions {
+  padding: 0px 10px;
+  background: #fff;
+  border-radius: 0 0 4px 4px;
+}
+
+.login-page .login-wrapper .header h2 {
+  line-height: 40px;
+  margin: 0;
+  padding: 0;
+  color: #df5640;
+}
+
+.login-page .login-wrapper .content input{
+  margin-bottom: 10px;
+}
+
+.login-page .login-wrapper .actions .link {
+  float: right;
+  padding: 5px 0 8px 0;
+  color: #777777;
+}
+
+@media (min-width: 1100px){
+  #content {
+      padding: 20px 20px 50px 21px;
+  }
+}
+
+@media (min-width: 900px){
+  .btn.btn-danger.btn-sm.visible-md{
+      display: inline-block!important;
+  }
+}
+
+@media (max-width: 900px){
+  .navbar-form.navbar-search.search-open input[type=text]{
+    height: 62px;
+  }
+  
+  .navbar-form.navbar-search.search-open input[type=radio]{
+    height: 0px;
+  }
+}
+
+@media (min-width: 450px){
+  .login-page .main-container{
+    width: 380px;
+    height: 300px;
+    left: 50%;
+    top: 50%;
+    margin-left: -190px;
+    margin-top: -150px;
+  }
+}

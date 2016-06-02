@@ -1,0 +1,123 @@
+<?php
+$viewdefs ['Opportunities'] = 
+array (
+  'EditView' => 
+  array (
+    'templateMeta' => 
+    array (
+      'maxColumns' => '2',
+      'widths' => 
+      array (
+        0 => 
+        array (
+          'label' => '10',
+          'field' => '30',
+        ),
+        1 => 
+        array (
+          'label' => '10',
+          'field' => '30',
+        ),
+      ),
+      'javascript' => '{$PROBABILITY_SCRIPT}',
+      'useTabs' => true,
+      'tabDefs' => 
+      array (
+        'DEFAULT' => 
+        array (
+          'newTab' => true,
+          'panelDefault' => 'expanded',
+        ),
+        'LBL_EDITVIEW_PANEL1' => 
+        array (
+          'newTab' => true,
+          'panelDefault' => 'expanded',
+        ),
+      ),
+      'syncDetailEditViews' => true,
+    ),
+    'panels' => 
+    array (
+      'default' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            'name' => 'name',
+          ),
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            'name' => 'date_closed',
+          ),
+          1 => 
+          array (
+            'name' => 'amount',
+          ),
+        ),
+        2 => 
+        array (
+          0 => 'opportunity_type',
+          1 => 'sales_stage',
+        ),
+        3 => 
+        array (
+          0 => 
+          array (
+            'name' => 'priority_c',
+            'studio' => 'visible',
+            'label' => 'LBL_PRIORITY',
+          ),
+          1 => 'lead_source',
+        ),
+        4 => 
+        array (
+          0 => 'description',
+        ),
+      ),
+      'lbl_editview_panel1' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            'name' => 'crm_negocios_opportunities_name',
+            'label' => 'LBL_CRM_NEGOCIOS_OPPORTUNITIES_FROM_CRM_NEGOCIOS_TITLE',
+          ),
+          1 => 
+          array (
+            'name' => 'productos_c',
+            'studio' => 'visible',
+            'label' => 'LBL_PRODUCTOS',
+          ),
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            'name' => 'motivo_cierre_c',
+            'label' => 'LBL_MOTIVO_CIERRE',
+          ),
+          1 => 
+          array (
+            'name' => 'tasks_opportunities_1_name',
+            'label' => 'LBL_TASKS_OPPORTUNITIES_1_FROM_TASKS_TITLE',
+          ),
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            'name' => 'leads_opportunities_1_name',
+            'label' => 'LBL_LEADS_OPPORTUNITIES_1_FROM_LEADS_TITLE',
+          ),
+          1 => '',
+        ),
+      ),
+    ),
+  ),
+);
+?>

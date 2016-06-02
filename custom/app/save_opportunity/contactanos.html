@@ -1,0 +1,434 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Ingreso Solicitudes Manuales</title>
+<!-- Bootstrap core CSS -->
+<link href="http://internet.cocha.com/css/bootstrap.css" rel="stylesheet">
+<!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+<style type="text/css">
+tr:focus {
+  background-color: #BDBDBD;
+  
+}
+        </style>
+</head>
+<body>
+
+<div class="container" id="wrap">
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+       <div class="row">
+        <input type="hidden" name="referencia" id="referencia" >
+          <h3>Datos de contacto</h3>
+          <p id="mensajes" class="pull-left" style="padding-left:12px; padding-top:6px;"></p>
+          <br>
+          <br>
+         
+          
+
+
+
+
+          <div class="col-xs-6 col-md-6">
+          <label>Nombre</label>
+          <input class="form-control" id="nombre" placeholder="Nombre" type="text" value="" />
+          </div>
+           <div class="col-xs-6 col-md-6">
+          <label>Apellido</label>
+          <input class="form-control" id="apellido" placeholder="Apellido" type="text" value="" />
+          </div>
+
+
+
+      </div>
+
+      <div class="row">
+         
+      </div>
+ 
+      <div class="row">
+        <div class="col-xs-6 col-md-7">
+          <label>Email</label>
+          <input class="form-control" id="email1" placeholder="Email" type="text" value="" />
+        </div>
+        <div class="col-xs-6 col-md-5">
+          <label>Teléfono</label>
+       
+          <input class="form-control" id="cel_numero" placeholder="12345678" type="text" value="" />
+        </div>
+      </div>
+
+      <div class="row">
+          <div class="col-xs-6 col-md-6">
+          <label>Clasificación </label>
+          
+          <select class="form-control" id="clasificacion"   name="clasificacion"        >
+            <option value="" ></option>
+            <option  value="Vip"  >Vip</option>
+            <option value="Gold"  >Gold</option>
+         
+          </select>
+        </div>
+                <div class="col-xs-6 col-md-6">
+          <label>Rut</label>
+       
+          <input class="form-control" id="rut" placeholder="15897657-9" type="text" value="" />
+        </div>
+      </div>
+    
+     <div class="row">
+        
+      </div> 
+      <br />
+      <div class="row">
+        <h3>Datos del viaje</h3>
+        <div class="col-xs-4 col-md-4">
+          <label>Fecha del Viaje</label>
+          <input class="form-control" id="fecha_ida" placeholder="DD-MM-AAAA" type="text" />
+        </div>
+
+
+          <div class="col-xs-4 col-md-3">
+          <label>Adultos <span class="small">(+ de 12 años)</span></label>
+          
+          <select class="form-control" id="cantidad_pax_adulto"   name="cantidad_pax_adulto"        >
+            <option value="0" selected="selected">0</option>
+            <option value="1"  >1</option>
+            <option value="2"  >2</option>
+            <option value="3"  >3</option>
+            <option value="4"  >4</option>
+            <option value="5"  >5</option>
+            <option value="6"  >6</option>
+            <option value="7"  >7</option>
+            <option value="8"  >8</option>
+            <option value="9"  >9</option>
+            <option value="10" >10</option>
+          </select>
+        </div>
+
+        <div class="col-xs-4 col-md-3">
+          <label>Niños <span class="small">(hasta 12 años)</span> </label>
+          
+          <select class="form-control" id="cantidad_pax_nino"   name="cantidad_pax_adulto"        >
+            <option value="0" selected="selected">0</option>
+            <option value="1"  >1</option>
+            <option value="2"  >2</option>
+            <option value="3"  >3</option>
+            <option value="4"  >4</option>
+            <option value="5"  >5</option>
+            <option value="6"  >6</option>
+            <option value="7"  >7</option>
+            <option value="8"  >8</option>
+            <option value="9"  >9</option>
+            <option value="10" >10</option>
+          </select>
+        </div>
+
+        <div class="col-xs-4 col-md-2">
+          <label>Infantes</label>
+            <select class="form-control" id="cantidad_pax_infante"   name="cantidad_pax_infante"        >
+            <option value="0" selected="selected">0</option>
+            <option value="1"  >1</option>
+            <option value="2"  >2</option>
+            <option value="3"  >3</option>
+            <option value="4"  >4</option>
+            <option value="5"  >5</option>
+            <option value="6"  >6</option>
+            <option value="7"  >7</option>
+            <option value="8"  >8</option>
+            <option value="9"  >9</option>
+            <option value="10" >10</option>
+          </select>
+        </div>
+
+
+
+
+       </div>
+
+         <div class="row">
+          <div class="col-xs-6 col-md-6">
+          <label>Región</label>
+          
+          <select class="form-control" id="region"   name="region"        >
+            <option value="" selected="selected"></option>
+            <option value="Caribe"  >Caribe</option>
+            <option value="Europa"  >Europa</option>
+            <option value="EEUU"  >EEUU</option>
+            <option value="Sudamerica"  >Sudamerica</option>
+            <option value="Chile"  >Chile</option>
+            <option value="Lejanos"  >Destinos Lejanos</option>
+         
+          </select>
+        </div>
+        <div class="col-xs-6 col-md-6">
+          <label>Destino</label>
+          
+          <input class="form-control" id="destino" placeholder="destino" type="text" />
+        </div>
+      </div>
+<br>
+
+      
+      
+
+      <div class="row">
+        <div class="col-xs-12 col-md-12">
+          <label>Comentarios</label>
+          <textarea cols="200" rows="4" class="form-control" id="comentario" placeholder="Comentarios"></textarea>
+        </div>
+      </div>
+  
+
+
+      <br />
+      <button class="btn btn-primary pull-left" id="submit">Enviar</button>
+     
+     <br><br>
+
+
+   </div><br>
+<br>
+
+  </div>
+</div>
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="http://internet.cocha.com/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+    <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+
+<script>
+$("#detalle_producto").hide();
+
+$.ajax({
+  url:"categorias.php",
+  success:function(result){
+  $("#categoria").html(result);
+}}); 
+
+
+ $.datepicker.regional['es'] = {
+        closeText: 'Cerrar',
+        prevText: '<Ant',
+        nextText: 'Sig>',
+        currentText: 'Hoy',
+        monthNames: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
+        monthNamesShort: ['Ene','Feb','Mar','Abr', 'May','Jun','Jul','Ago','Sep', 'Oct','Nov','Dic'],
+        dayNames: ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'],
+        dayNamesShort: ['Dom','Lun','Mar','Mié','Juv','Vie','Sáb'],
+        dayNamesMin: ['Do','Lu','Ma','Mi','Ju','Vi','Sá'],
+        weekHeader: 'Sm',
+        dateFormat: 'dd/mm/yy',
+        firstDay: 1,
+        isRTL: false,
+        showMonthAfterYear: false,
+        yearSuffix: ''
+    };
+    $.datepicker.setDefaults($.datepicker.regional['es']);
+  $(function() {
+     
+    $( "#fecha_ida" ).datepicker({
+      numberOfMonths: 1,
+      showButtonPanel: true
+    });
+  });
+   jQuery( function(){
+      jQuery( document ).trigger( "enhance" );
+    });
+            decode = function(s) {
+                return decodeURIComponent(s.split("+").join(" "));
+            }
+
+
+            $("#nombre_producto , #categoria").bind( "keyup change", function() {
+                 
+
+                 $.ajax({url:"listar_producto.php",
+                  data: {"nombre_producto": $("#nombre_producto").val(),
+                        "categoria": $("#categoria").val()
+                      }
+                  ,success:function(result){
+                    $("#listar_producto").html(result);
+                  }});  
+
+
+            });  
+           
+            $("#submit").click(function() {
+              
+                var $_GET = {};
+
+                document.location.search.replace(/\??(?:([^=]+)=([^&]*)&?)/g, function () {
+                    $_GET[decode(arguments[1])] = decode(arguments[2]);
+                });
+
+                var nombre             	 = $("#nombre").val();
+                var apellido           	 = $("#apellido").val();
+                //var canal                	 = $("#canal").val();
+                var email1             	 = $("#email1").val();
+                var referencia            	 = $("#referencia").val();
+                var fecha_ida       	 = $("#fecha_ida").val();
+               //var fecha_regreso       = $("#fecha_regreso").val();
+               //var cantidad_habitacion = $("#cantidad_habitacion").val();
+                var cantidad_pax_adulto  = $("#cantidad_pax_adulto").val();
+                var cantidad_pax_nino 	 = $("#cantidad_pax_nino").val();
+                var comentario      	 = $("#comentario").val();
+                var telefono_celular  	 = $("#cel_numero").val();
+               //var telefono_fijo     	 = $("#fijo_pais").val()+$("#fijo_codigo").val()+$("#fijo_numero").val();
+               // var agente               = $("#agente").val();
+              //var cid                  = $_GET["CID"];
+              var region               = $("#region").val();
+              var destino               = $("#destino").val();
+               var rut               = $("#rut").val();
+               var clasificacion               = $("#clasificacion").val();
+               var cantidad_pax_infante               = $("#cantidad_pax_infante").val();
+                
+
+                // Soluci�n temporaria mientras se prepara Backend
+                comentario = comentario;
+                  
+                if(valida_campos()){  
+                        $("#mensajes").removeClass("text-danger");
+                        $("#mensajes").removeClass("text-success");
+                        $("#mensajes").removeClass("error-pad")
+                }else{ 
+
+                  $('html, body').animate({ scrollTop: 0 }, 'slow');
+                  //alert('Falta Información');
+                  return false;}
+
+                $.ajax({
+                    type: "POST",
+                    url: "http://104.131.0.44/ripley/index.php?entryPoint=save_opportunity",
+                    data: {
+                        "nombre": nombre,
+                        "apellido": apellido,
+                        "email1": email1,
+                        "fecha_ida": fecha_ida,
+                        "adultos": cantidad_pax_adulto,
+                        "ninos": cantidad_pax_nino,
+                        "comentarios": comentario,
+                        "celular": telefono_celular,
+                        "region": region,
+                        "destino": destino,
+                        "rut": rut,
+                        "clasificacion":clasificacion,
+                        "cantidad_pax_infante":cantidad_pax_infante
+                    },
+                    
+                    beforeSend: function(){
+                        $("#submit").attr("disabled", true);
+                    },
+                    complete: function(){
+                        $("#submit").removeAttr("disabled");
+                    },
+                    success: function( data ){
+                       
+                      $("#mensajes").removeClass("text-danger");
+                      $("#mensajes").removeClass("text-success");
+                      $("#mensajes").removeClass("error-pad")
+
+                      $("#wrap").after($("#mensajes"))
+                      $("#wrap").empty();
+                      $("#wrap").append($("#mensajes"))
+
+                      $("#mensajes").removeClass("pull-left")
+                      $("#mensajes").before("<div class='block-200'></div>")
+                      $("#mensajes").addClass("text-center")
+                      $("#mensajes").addClass("text-success");
+                      $("#mensajes").html(data);
+                        
+                    }
+                });
+            });
+
+        function agrega_referencia(ref,n,ca,op){
+            $("#referencia").val(ref);
+            $("#d1").html(n);
+            $("#d2").html(ref);
+            $("#d3").html(ca);
+            $("#d4").html(op);
+            $("#detalle_producto").show();
+            $("#listar_producto").html('');
+        }
+
+         function valida_campos(ref){
+
+                $("#mensajes").addClass("text-danger");
+                $("#mensajes").addClass(".error-pad")
+                                
+                var nombre                = $("#nombre").val();
+                var apellido             = $("#apellido").val();
+                var canal                  = $("#canal").val();
+                var email1               = $("#email1").val();
+                var fecha_ida            = $("#fecha_ida").val();
+                var cantidad_pax_adulto  = $("#cantidad_pax_adulto").val();
+                var cantidad_pax_nino    = $("#cantidad_pax_nino").val();
+                var comentario           = $("#comentario").val();
+                var telefono_celular     = $("#cel_pais").val()+$("#cel_codigo").val()+$("#cel_numero").val();
+                var referencia               = $("#referencia").val();
+                
+                //if(canal =='' ){$("#mensajes").html("Debe Seleccionar el canal");return false;}
+                //if(referencia =='' ){$("#mensajes").html("Debe seleccionar un producto");return false;}
+               // if(nombre =='' ){$("#mensajes").html("Debe ingresar nombre");return false;}
+               // if(apellido =='' ){$("#mensajes").html("Debe ingresar apellido");return false;}
+               // if(email1 =='' ){$("#mensajes").html("Debe ingresar email");return false;}
+                //if(telefono_celular =='' ){$("#mensajes").html("Debe ingresar telefono");return false;}
+                //if(fecha_ida =='' ){$("#mensajes").html("Debe ingresar fecha del viaje");return false;}
+                //if(cantidad_pax_adulto =='0' ){$("#mensajes").html("Debe ingresar cantidad de adultos");return false;}
+                                
+
+                return true;
+                
+         } 
+
+
+          function validaRut(campo){
+            if ( campo.length == 0 ){ return false; }
+            if ( campo.length < 8 ){ return false; }
+           
+            campo = campo.replace('-','')
+            campo = campo.replace(/\./g,'')
+           
+            var suma = 0;
+            var caracteres = "1234567890kK";
+            var contador = 0;    
+            for (var i=0; i < campo.length; i++){
+              u = campo.substring(i, i + 1);
+              if (caracteres.indexOf(u) != -1)
+              contador ++;
+            }
+            if ( contador==0 ) { return false }
+            
+            var rut = campo.substring(0,campo.length-1)
+            var drut = campo.substring( campo.length-1 )
+            var dvr = '0';
+            var mul = 2;
+            
+            for (i= rut.length -1 ; i >= 0; i--) {
+              suma = suma + rut.charAt(i) * mul
+                          if (mul == 7)   mul = 2
+                      else  mul++
+            }
+            res = suma % 11
+            if (res==1)   dvr = 'k'
+                          else if (res==0) dvr = '0'
+            else {
+              dvi = 11-res
+              dvr = dvi + ""
+            }
+            if ( dvr != drut.toLowerCase() ) { return false; }
+            else { return true; }
+          }
+ 
+
+
+        </script>
+</body>
+</html>

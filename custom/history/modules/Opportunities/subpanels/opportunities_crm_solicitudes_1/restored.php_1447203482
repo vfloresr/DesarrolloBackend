@@ -1,0 +1,75 @@
+<?php
+// created: 2015-11-10 21:57:57
+$layout_defs = array (
+  'name' => 
+  array (
+    'vname' => 'LBL_NAME',
+    'widget_class' => 'SubPanelDetailViewLink',
+    'width' => '45%',
+    'default' => true,
+  ),
+  'date_modified' => 
+  array (
+    'vname' => 'LBL_DATE_MODIFIED',
+    'width' => '45%',
+    'default' => true,
+  ),
+  'edit_button' => 
+  array (
+    'vname' => 'LBL_EDIT_BUTTON',
+    'widget_class' => 'SubPanelEditButton',
+    'module' => 'crm_solicitudes',
+    'width' => '4%',
+    'default' => true,
+  ),
+  'canal' => 
+  array (
+    'type' => 'varchar',
+    'vname' => 'LBL_CANAL',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'hotel' => 
+  array (
+    'type' => 'varchar',
+    'vname' => 'LBL_HOTEL',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'hotel_habitacion' => 
+  array (
+    'type' => 'varchar',
+    'vname' => 'LBL_HOTEL_HABITACION',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'fecha_flexible' => 
+  array (
+    'type' => 'bool',
+    'default' => true,
+    'vname' => 'LBL_FECHA_FLEXIBLE',
+    'width' => '10%',
+  ),
+  'ninos' => 
+  array (
+    'type' => 'int',
+    'vname' => 'LBL_NINOS',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'fecha_viaje' => 
+  array (
+    'type' => 'date',
+    'vname' => 'LBL_FECHA_VIAJE',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'remove_button' => 
+  array (
+    'vname' => 'LBL_REMOVE',
+    'widget_class' => 'SubPanelRemoveButton',
+    'module' => 'crm_solicitudes',
+    'width' => '5%',
+    'default' => true,
+  ),
+);

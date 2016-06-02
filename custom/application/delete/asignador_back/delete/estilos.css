@@ -1,0 +1,47 @@
+html{
+height:100%;
+}
+
+body {
+ margin:0;
+padding:0;
+height:100%;
+}
+
+.form {
+  background-color: #F6F6F6;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  font-weight: normal;
+  border: 1px solid #DCDCDC;
+  height:48px;
+  padding-top:5px;
+  padding-left:20px;
+  margin-left:-15px;
+  margin-right:-12px;
+ }
+ 
+ .tipo_ejecutivo{
+  margin-top:-41px;
+  margin-left:565px;  
+	 
+ }
+ 
+ .boton_asignar{
+display:block;
+margin:-40px 0px 0px 970px;
+ 
+ }
+ 
+tr.group,
+tr.group:hover {
+    background-color: #ddd !important;
+}
+
+.texto_normal{
+    FONT-SIZE: 12px;
+    COLOR:#ff0000;
+    FONT-FAMILY: Verdana, Arial, Tahoma;
+    PADDING-LEFT: 5px;
+    PADDING-RIGHT: 5px
+}
